@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evendeez</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">     <!-- Bootstrap -->
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/navbar.css">
+   
+    </head>
+
+    <body>
+        
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+           <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="Images/navbarLogo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li id="Home" class="nav-item active">
+                  <a class="nav-link" href="#">Home</a>
+                </li>
+                <li id="About" class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li id="Events" class="nav-item">
+                    <a class="nav-link" href="#">Events</a>
+                </li>
+                <li id="Contact" class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+     
+            </div>
+           </div>
+        </nav>
+    
+
+        <!-- Caraousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+              <li id="firstItem" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li id="secondItem" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li id="thirdItem" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li id="fourthItem" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+
+            <div class="text">
+                <p id="headline">HELLO, WE CAN PLAN YOUR
+                    <span class="word firstWord"> WEDDING </span>
+                    <span class="word secondWord"> BIRTHDAY </span>
+                    <span class="word thirdWord"> MEETINGS </span>
+                    <span class="word fourthWord"> EVENTS </span>
+                </p>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="Images/birthday.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/meeting-2284501_1920.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/christening-1499314_1920.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="Images/wedding-1353829_1920.jpg" alt="Fourth slide">
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>                        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>    <!-- Popper JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  <!-- Latest compiled JavaScript -->
+        <script src="JavaScript/headline.js"></script>
+        <script src="JavaScript/navbar.js"></script>
+
+    </body>
+
+</html>

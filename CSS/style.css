@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: tahoma;
+}
+
+/***************************************** NAVBAR CSS *********************************************************/
+
+.navbar-brand
+{
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link
+{
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.navbar li
+{
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+}
+
+.navbar #Home:hover, .navbar #Home.active
+{
+    border-bottom: 3px solid greenyellow;
+}
+
+.navbar #About:hover, .navbar #About.active
+{
+    border-bottom: 3px solid orange;
+}
+
+.navbar #Events:hover, .navbar #Events.active
+{
+    border-bottom: 3px solid rgb(153, 0, 255);
+}
+
+.navbar #Contact:hover, .navbar #Contact.active
+{
+    border-bottom: 3px solid deeppink;
+}
+
+.navbar-brand img{
+    width: 50%;
+    height: auto;
+}
+
+/**************************************************************************************************************/
+
+/***************************************** CARAOUSEL CSS *********************************************************/
+
+.carousel-item
+{
+    height: 100vh;
+    min-height: 270px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+}
+
+.carousel-item img
+{
+    -webkit-filter: grayscale(100%);    /* For Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.carousel-indicators #firstItem.active {
+    transition: width 0.8s, background-color 0.8s;
+    width: 7%;
+    background-color: greenyellow
+}
+
+.carousel-indicators #secondItem.active {
+    transition: width 0.8s, background-color 0.8s;
+    width: 7%;
+    background-color: orange
+}
+
+.carousel-indicators #thirdItem.active {
+    transition: width 0.8s, background-color 0.8s;
+    width: 7%;
+    background-color: rgb(153, 0, 255);
+}
+
+.carousel-indicators #fourthItem.active {
+    transition: width 0.8s, background-color 0.8s;
+    width: 7%;
+    background-color: deeppink
+}
+
+.carousel-indicators li {
+    transition: width 0.8s, background-color 0.8s;
+}
+
+/****************************************************************************************************************/
+
+/***************************************** HEADLINE CSS *********************************************************/
+.text
+{
+    /* Set the position here */
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 10;
+    font-size:3vw;
+    font-weight: bolder;
+
+    background-color: rgba(0,0,0,0.7);
+}
+
+#headline 
+{
+    color: white;
+}
+
+p
+{
+    /* Aligning on the left side of the constant text */
+    position: absolute;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+
+    right: 38%;
+    top: 45%;
+    text-align: center;
+}
+
+.word
+{
+    position: absolute;
+    width: 250px;
+    opacity: 0;
+
+    text-align: left;
+    margin-left: 0.8vw;
+}
+
+
+.letter
+{
+    display: inline-block;
+    position: relative;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25%;
+}
+
+.letter.out
+{
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.775, 0.19);
+}
+
+.letter.behind
+{
+    transform: rotateX(-90deg);
+}
+
+.letter.in
+{
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.firstWord
+{
+    color: deeppink;
+}
+
+.secondWord
+{
+    color: greenyellow;
+}
+
+.thirdWord
+{
+    color: orange;
+}
+
+.fourthWord
+{
+    color: rgb(153, 0, 255);
+}
+
+/****************************************************************************************************************/
