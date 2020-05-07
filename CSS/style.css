@@ -5,20 +5,16 @@
     font-family: tahoma;
 }
 
-/***************************************** NAVBAR CSS *********************************************************/
-
-.navbar-brand
-{
-    margin-top: 0.5rem;
-    color: white;
-    font-size: 2vw;
-    font-weight: 600;
-    text-transform: uppercase;
+html{
+    scroll-behavior: smooth;
 }
+
+/***************************************** NAVBAR CSS *********************************************************/
 
 .nav-link
 {
     color: white;
+    font-size: 1.3vw;
     font-weight: 600;
     text-transform: uppercase;
     margin-left: 0.5rem;
@@ -30,47 +26,58 @@
     border-bottom: 3px solid rgba(255, 0, 0, 0);
 }
 
-.navbar #Home:hover, .navbar #Home.active
+.navbar #HomeTab:hover, .navbar #HomeTab.active
 {
     border-bottom: 3px solid greenyellow;
 }
 
-.navbar #About:hover, .navbar #About.active
+.navbar #AboutTab:hover, .navbar #AboutTab.active
 {
     border-bottom: 3px solid orange;
 }
 
-.navbar #Events:hover, .navbar #Events.active
+.navbar #EventsTab:hover, .navbar #EventsTab.active
 {
     border-bottom: 3px solid rgb(153, 0, 255);
 }
 
-.navbar #Contact:hover, .navbar #Contact.active
+.navbar #ContactTab:hover, .navbar #ContactTab.active
 {
     border-bottom: 3px solid deeppink;
 }
 
 .navbar-brand img{
-    width: 50%;
+    margin-top: 0.5rem;
+    width: 45%;
     height: auto;
 }
 
 /**************************************************************************************************************/
 
 /***************************************** CARAOUSEL CSS *********************************************************/
+#carouselExampleIndicators
+{
+    box-shadow: 0 5px 5px rgb(65, 64, 64);
+}
 
 .carousel-item
 {
-    height: 100vh;
-    min-height: 270px;
-    background: no-repeat center center scroll;
+    width: 100%;
     background-size: cover;
 }
 
 .carousel-item img
 {
-    -webkit-filter: grayscale(100%);    /* For Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    filter: grayscale(0.7);
+}
+
+.carousel-caption
+{
+    position: absolute;
+    top: 45%;
+
+    font-size:3vw;
+    font-weight: bolder;
 }
 
 .carousel-indicators #firstItem.active {
@@ -109,12 +116,19 @@
     /* Set the position here */
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: auto;
 
-    z-index: 10;
+    top: 45%;
+    z-index: 5;
     font-size:3vw;
     font-weight: bolder;
+}
 
+.bg
+{
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    z-index: 3;
     background-color: rgba(0,0,0,0.7);
 }
 
@@ -193,3 +207,101 @@ p
 }
 
 /****************************************************************************************************************/
+
+/************************************************ ABOUT *********************************************************/
+
+#About
+{
+    background-color: rgb(85, 85, 85);
+}
+
+img.AboutLogo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width:25%;
+    height:auto;
+}
+
+.aboutContent
+{
+    text-align: center;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+
+/****************************************************************************************************************/
+
+/************************************************ EVENTS *********************************************************/
+
+#Events
+{
+    background-color: rgb(94, 92, 92)
+}
+
+
+img.EventLogo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width:25%;
+    height:auto;
+}
+
+.eventContent
+{
+    text-align: center;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+
+/****************************************************************************************************************/
+
+/************************************************ CONTACT *********************************************************/
+
+#Contact
+{
+    background-color: rgb(114, 113, 113);
+}
+
+
+img.ContactLogo
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2rem;
+    width:25%;
+    height:auto;
+}
+
+.contactContent
+{
+    text-align: center;
+    padding-bottom: 4rem;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 550;
+}
+
+/****************************************************************************************************************/
+
+/************************************************ FOOTER *********************************************************/
+
+.footer
+{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 550;
+    padding: 2rem;
+}
